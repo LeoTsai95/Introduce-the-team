@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>YOASOBI</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./css/小專.css">
+</head>
+
+<body>
+  <div class="wh1">
+    <div class="wh1">
+      <div id="sidebar" class="collapsed">
+        <button id="toggleBtn" onclick="toggleSidebar()">
+          <img src="./img/roomIn.png" alt="Toggle Sidebar" class="zoomin">
+        </button>
+        <ul id="hrefcolor" class="text-center mt-auto">
+          <li><a href="小專製做.html">Home</a></li>
+          <li><a href="小專製做.html#tru1">關於</a></li>
+          <li>
+            <div id="dropdownMenu" class="dropdown">
+              <button class="dropbtn"><a href="歌曲介紹.html">歌曲介紹</a></button>
+              <div class="dropdown-content">
+                <a href="歌曲介紹.html">歌曲介紹</a>
+                <a href="歌曲介紹2.html">歌曲介紹2</a>
+                <a href="歌曲介紹3.html">歌曲介紹3</a>
+
+                <a href="歌曲介紹3.html">歌曲介紹4</a>
+                <a href="歌曲介紹3.html">歌曲介紹5</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="年份記事.html">年份記事</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- 側邊欄 -->
+      <!-- 其他內容 -->
+
+    </div>
+    <div id="content">
+      <div class="topnav" id="myTopnav">
+        <a href="小專製做.html" class="active">Home</a>
+        <a href="小專製做.html#tru1">關於</a>
+        <a href="歌曲介紹.html">歌曲介紹</a>
+
+        <a href="年份記事.html">年份記事</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="content" ">
+        <div class="slideshow-container">
+          <h1>YOASOBI</h1>
+          <div class="mySlides fade">
+            <img src="./img/yoasobi.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div >
+              <img src="./img/Into_the_Night_YT.png" style="width: 100%;">
+            </div>
+
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./img/monster.jpeg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+            <hr>
+            <h1>簡介</h1>
+            <p>
+              Ayase和ikura兩人除了YOASOBI外，都還有原本就在進行的工作，於是決定將各自的工作視為「早上的活動」，反之YOASOBI這個組合就是「晚上的活動」，所以取名YOASOBI（夜遊び）帶有「在夜晚玩耍」意境的詞為他們的團名。
+            </p>
+            <hr>
+          </div>
+
+          <div><br><br><br><br></div>
+          <div>
+            <div>
+              <h1 id="tru1">成員介紹</h1>
+              <img src="./img/arttis.jpg" style="margin-bottom: 10px;" onclick="openModal(0)" class="hover-shadow">
+              <div class="row">
+                <div class="col-sm-4 no-gutters">
+                  <img src="./img/p1.jpg" onclick="openModal(1)" class="hover-shadow">
+                </div>
+                <div class="col-sm-4 no-gutters">
+                  <img src="./img/p2.jpg" onclick="openModal(2)" class="hover-shadow">
+                </div>
+                <div class="col-sm-4 no-gutters">
+                  <img src="./img/p3.jpg" onclick="openModal(3)" class="hover-shadow">
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+              <div id="modalContent" class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" class="modal-image">
+              </div>
+            </div>
+            <hr>
+            <div>
+              <div class="row">
+                <div class="col-sm-9">
+                  <h1>Ayase</h1>
+                </div>
+                <div class="col-sm-3">
+                  <div class="mt-3">
+                    <a href="https://www.youtube.com/c/Ayase0404" target="_blank">
+                      <i class="fab fa-youtube fa-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/Ayase_0404" target="_blank">
+                      <i class="fab fa-twitter fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ayase_0404/" target="_blank">
+                      <i class="fab fa-instagram fa-2xl"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-sm-9">
+                  <p>
+                    1994年4月4日出生，山口縣出身。於2018年12月開始投稿VOCALOID音樂作品。以悲傷和哀愁的旋律，以及引人深思的歌詞而受到廣泛歡迎。他於2019年4月發表的作品「最後的避難所」在YouTube上突破了1,300萬次觀看。他於2019年11月發行的首張EP專輯「幽靈東京」也迅速售罄。他以自己翻唱VOCALOID音樂而聞名，其中「幽靈東京」已突破了1900萬次觀看，「夜撫的玻璃」也突破了2200萬次觀看。除了作為YOASOBI的作曲家活動外，他還為多位不同的藝術家提供音樂創作。
+                  </p>
+                </div>
+                <div class="col-sm-3">
+                  <img src="./img/Ayasehead.jpg" class="float-right" style="max-width: 176px; border-radius: 20px;">
+                </div>
+              </div>
+              <hr>
+              <div style="display: flex; align-items: center;">
+                <div>
+                  <a href="https://www.youtube.com/channel/UCztEY6czNyJKjRWMwuur9bg" target="_blank">
+                    <i class="fab fa-youtube fa-2xl"></i>
+                  </a>
+                  <a href="https://twitter.com/ikutalilas" target="_blank">
+                    <i class="fab fa-twitter fa-2xl"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lilasikuta/" target="_blank">
+                    <i class="fab fa-instagram fa-2xl"></i>
+                  </a>
+                </div>
+                <h1 id="right1" style="margin-left: auto;">ikura</h1>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-sm-3">
+                  <img src="./img/ikura.jpg" class="Flotleft" style="max-width: 176px; border-radius: 20px;">
+                </div>
+                <div class="col-sm-9">
+                  <p class="Flotleft">
+                    2000年9月25日出生，出生地為東京都。作為創作歌手"幾田りら"活躍，他於2021年3月發行的單曲「Answer」被選為東京海上日動安心人壽「安心就業不能保障保險」廣告曲。他在2021年7月16日上映的細田守導演的電影《竜與小太陽的姬》中首次擔任配角聲優，飾演主角·鈴的朋友等多個角色，並在多個領域積極活躍。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div style="display: flex;">
+              <div style="margin-right: 10px;">
+                <iframe width="440" height="315" src="https://www.youtube.com/embed/yOFcd2227lw"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div>
+                <img src="./img/擷取.JPG" style="width: 440px; height: 315px; background-color: black;border-radius: 0;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  </div>
+
+  <script src="./javascript/小專.js"></script>
+</body>

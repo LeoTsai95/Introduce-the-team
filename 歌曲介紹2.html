@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歌曲介紹</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/小專.css">
+
+</head>
+
+<body>
+  <!-- 側邊欄 -->
+  <div class="wh1">
+    <div id="sidebar" class="collapsed">
+      <button id="toggleBtn" onclick="toggleSidebar()">
+        <img src="./img/roomIn.png" alt="Toggle Sidebar" class="zoomin">
+      </button>
+      <ul id="hrefcolor" class="text-center mt-auto">
+        <li><a href="小專製做.html">Home</a></li>
+        <li><a href="小專製做.html#tru1">關於</a></li>
+        <li>
+          <div id="dropdownMenu" class="dropdown">
+            <button class="dropbtn"><a href="歌曲介紹.html">歌曲介紹</a></button>
+
+            <div class="dropdown-content">
+              <a href="歌曲介紹.html">歌曲介紹</a>
+              <a href="歌曲介紹2.html">歌曲介紹2</a>
+              <a href="歌曲介紹3.html">歌曲介紹3</a>
+              
+              <a href="歌曲介紹3.html">歌曲介紹4</a>
+              <a href="歌曲介紹3.html">歌曲介紹5</a>
+            </div>
+          </div>
+        </li>
+        <a href="年份記事.html">年份記事</a>
+      </ul>
+    </div>
+    
+
+    <!-- 其他內容 -->
+    <!-- 側邊欄 -->
+
+  </div>
+
+
+  <!-- 至頂欄 -->
+  <div>
+    <div class="dot"></div>
+    <div class="mySlides fade"> </div>
+    <div class="topnav" id="myTopnav">
+      <a href="小專製做.html" class="active">Home</a>
+      <a href="小專製做.html#tru1">關於</a>
+      <a href="歌曲介紹.html">歌曲介紹</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- 至頂欄 -->
+    <div class="slideshow-container">
+      <img src="./img/YOASOBI.jpg" class="img-center " alt="Centered Image" style="width: 1000px;">
+      <h1>SONG</h1>
+      <div class="divider">
+        <span class="divider-text">たぶん</span>
+      </div>
+      <!-- Trigger/Open The Modal -->
+      <div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./img/たぶん.png" class="imgmax176" onclick="openModal('myModal7')">
+            <!-- The Modal -->
+            <div id="myModal7" class="my-modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>たぶん</h2>
+                  <span class="close-btn" onclick="closeModal('myModal7')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="tabun">
+                  <!-- 歌詞內容 -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="./img/たぶんnovel.jpg" class="imgmax176" onclick="openModal('myModal8')">
+            <!-- The Modal -->
+            <div id="myModal8" class="my-modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>たぶん</h2>
+                  <span class="close-btn" onclick="closeModal('myModal8')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="tabun1"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <ul class="col-sm-4 bottomzero">
+            <li>MUSIC :Ayase</li>
+            <li>VOCAL :ikura </li>
+            <li>NOVEL : SHINANO</li>
+            <li>VIDEO :Nanjo Saho</li>
+          </ul>
+
+        </div>
+        <br>
+        <!--  -->
+        <!-- 第二段 -->
+        <!--  -->
+        <div class="slideshow-container">
+          <div class="parent-container">
+            <div class="video-container">
+              <img src="./img/tabun_yt.JPG" class="width750422">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider" style="margin-top: 20%;">
+        <span class="divider-text">群青</span>
+      </div>
+      <div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./img/群青.png" class="imgmax176" onclick="openModal('myModal4')">
+            <!-- The Modal -->
+            <div id="myModal4" class="my-modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>群青</h2>
+                  <span class="close-btn" onclick="closeModal('myModal4')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="aoi1">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <img src="./img/群青Nov.png" class="imgmax176" onclick="openModal('myModal3')">
+            <!-- The Modal -->
+            <div id="myModal3" class="my-modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>青を味方に</h2>
+                  <span class="close-btn" onclick="closeModal('myModal3')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="aoi1novel">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="col-sm-4 bottomzero">
+            <li>MUSIC: Ayase</li>
+            <li>VOCAL: ikura</li>
+            <li>NOVEL: alfort creative team</li>
+            <li>VIDEO: Makino Atsushi</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+      <br>
+      <div class="slideshow-container">
+        <div class="parent-container">
+          <div class="video-container">
+            <img src="./img/群青yt.JPG" class="width750422">
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- 第三段 -->
+      <!--  -->
+      <div class="divider" style="margin-top: 20%;">
+        <span class="divider-text">ハルカ</span>
+      </div>
+      <div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./img/haruga.png" class="imgmax176" onclick="openModal('myModal5')">
+            <!-- The Modal -->
+            <div id="myModal5" class="my-modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>ハルカ</h2>
+                  <span class="close-btn" onclick="closeModal('myModal5')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="haruga">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <img src="./img/harugaNov.png" class="imgmax176" onclick="openModal('myModal6')">
+            <!-- The Modal -->
+            <div id="myModal6" class="my-modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>鈴木おさむ「月王子」</h2>
+                  <span class="close-btn" onclick="closeModal('myModal6')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="harugaNov1">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="col-sm-4 bottomzero">
+            <li>MUSIC: Ayase</li>
+            <li>VOCAL: ikura</li>
+            <li>NOVEL: 鈴木おさむ</li>
+            <li>VIDEO: 伊豆見香苗</li>
+            
+          </ul>
+        </div>
+
+
+
+      </div>
+      <br>
+      <div class="parent-container">
+        <div class="video-container">
+          <img src="./img/harugaYT.png" class="width750422">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="pagination parent-container wh1" style="margin: 5%;">
+    <a href="歌曲介紹.html">&laquo;</a>
+    <a href="歌曲介紹.html">1</a>
+    <a class="active" href="歌曲介紹2.html">2</a>
+    <a href="歌曲介紹3.html">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="歌曲介紹3.html">&raquo;</a>
+  </div>
+  <script src="./javascript/小專.js"></script>
+  <script src="./javascript/歌詞2.js"></script>
+  </div>
+</body>
+
+</html>

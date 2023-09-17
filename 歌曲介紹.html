@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歌曲介紹</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/小專.css">
+
+</head>
+
+<body>
+  <!-- 側邊欄 -->
+  <div class="wh1">
+
+    
+    <div id="sidebar" class="collapsed">
+      <button id="toggleBtn" onclick="toggleSidebar()">
+        <img src="./img/roomIn.png" alt="Toggle Sidebar" class="zoomin">
+      </button>
+      <ul id="hrefcolor" class="text-center mt-auto">
+        <li><a href="小專製做.html">Home</a></li>
+        <li><a href="小專製做.html#tru1">關於</a></li>
+        <li>
+          <div id="dropdownMenu" class="dropdown">
+            <button class="dropbtn"><a href="歌曲介紹.html">歌曲介紹</a></button>
+            <div class="dropdown-content">
+              <a href="歌曲介紹.html">歌曲介紹</a>
+              <a href="歌曲介紹2.html">歌曲介紹2</a>
+              <a href="歌曲介紹3.html">歌曲介紹3</a>
+              <a href="歌曲介紹3.html">歌曲介紹4</a>
+              <a href="歌曲介紹3.html">歌曲介紹5</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="年份記事.html">年份記事</a></li>
+      </ul>
+    </div>
+    
+
+
+    <!-- 其他內容 -->
+    <!-- 側邊欄 -->
+
+  </div>
+
+
+  <!-- 至頂欄 -->
+  <div>
+    <div class="dot"></div>
+    <div class="mySlides fade"> </div>
+    <div class="topnav" id="myTopnav">
+      <a href="小專製做.html" class="active">Home</a>
+      <a href="小專製做.html#tru1">關於</a>
+      <a href="歌曲介紹.html">歌曲介紹</a>
+      <a href="年份記事.html">年份記事</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- 至頂欄 -->
+    <div class="slideshow-container">
+      <img src="./img/YOASOBI.jpg" class="img-center slide-in-element" alt="Centered Image" style="width: 100%;">
+
+      <h1 class="slide-in-element">SONG</h1>
+      <div class="divider slide-in-element">
+        <span class="divider-text">夜に駆ける</span>
+      </div>
+      <div class="slide-in-element">
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./img/Into_the_Night.png" class="imgmax176" onclick="openModal('myModal1')">
+            <div id="myModal1" class="my-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>夜に駆ける</h2>
+                  <span class="close-btn" onclick="closeModal('myModal1')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="lyricsContainer">
+                  <!-- 歌詞內容 -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="./img/タナトスの誘惑.jpg" class="imgmax176" onclick="openModal('myModal2')">
+            <div id="myModal2" class="my-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>タナトスの誘惑</h2>
+                  <button id="playButton" class="btn btn-info" title="按下撥放，會記錄當下位置">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                      <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                    </svg>
+                  </button>
+                  <button id="stopButton" class="btn btn-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                      <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                  </button>
+                  <button id="resetButton" class="btn btn-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                      <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                      <path d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                    </svg>
+                  </button>
+                  <span class="close-btn" onclick="closeModal('myModal2')">&times;</span>
+                </div>
+                  <div class="modal-body text-center" id="myModal2Content">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="col-sm-4 bottomzero slide-in-element">
+            <li>MUSIC :Ayase</li>
+            <li>VOCAL :ikura </li>
+            <li>NOVEL : HOSHINO MAYO</li>
+            <li>VIDEO :Ai Nina</li>
+          </ul>
+        </div>
+        <br>
+        <div class="parent-container slide-in-element">
+          <div class="video-container">
+            <a href="https://youtu.be/by4SYYWlhEs" target="_blank"><img src="./img/夜に駆けるYT.JPG" class="width750422"></a>
+          </div>
+        </div>
+      </div>
+      <div class="divider" style="margin-top: 20%;">
+        <span class="divider-text slide-in-element">あの夢をなぞって</span>
+      </div>
+      <div class="slide-in-element">
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./img/あの夢をなぞって.png" class="imgmax176" onclick="openModal('myModal4')">
+            <div id="myModal4" class="my-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>あの夢をなぞって</h2>
+                  <span class="close-btn" onclick="closeModal('myModal4')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="hoshinohana">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="./img/夢の雫と星の花.jpg" class="imgmax176" onclick="openModal('myModal3')">
+            <div id="myModal3" class="my-modal">
+              <div class="modal-content" id="parentElementId">
+                <div class="modal-header">
+                  <h2>夢の雫と星の花</h2>
+                  <button class="playButtons btn btn-info" onclick="startPlay1()" title="按下撥放，會記錄當下位置">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-play" viewBox="0 0 16 16">
+                      <path
+                        d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                    </svg>
+                  </button>
+
+                  <button class="pauseButtons btn btn-info" onclick="pausePlay1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-pause" viewBox="0 0 16 16">
+                      <path
+                        d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                  </button>
+                  <button class="resetButtons btn btn-info " onclick="resetTimer1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                      <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                      <path
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                    </svg>
+                  </button>
+                  <span class="close-btn" onclick="closeModal('myModal3')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="hoshinohananovel">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="col-sm-4 bottomzero slide-in-element">
+            <li>MUSIC: Ayase</li>
+            <li>VOCAL: ikura</li>
+            <li>NOVEL: ISHIKI SOTA</li>
+            <li>VIDEO: HARUMOTSU</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="slideshow-container slide-in-element">
+        <div class="parent-container">
+          <div class="video-container">
+            <a href="https://youtu.be/sAuEeM_6zpk" target="_blank"> <img src="./img/yt夢の雫と星の花.JPG"
+                class="width750422"></a>
+          </div>
+        </div>
+      </div>
+      <div class="divider" style="margin-top: 20%;">
+        <span class="divider-text slide-in-element">ハルジオン</span>
+      </div>
+      <div class="slide-in-element">
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./img/ハルジオン.jpg" class="imgmax176" onclick="openModal('myModal5')">
+            <div id="myModal5" class="my-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>ハルジオン</h2>
+                  <span class="close-btn" onclick="closeModal('myModal5')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="harugi">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="./img/ハルジオンnovel.jpg" class="imgmax176" onclick="openModal('myModal6')">
+            <div id="myModal6" class="my-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>それでも、ハッピーエンド</h2>
+                  <span class="close-btn" onclick="closeModal('myModal6')">&times;</span>
+                </div>
+                <div class="modal-body text-center" id="hoshinohananovel1">
+                  <!-- Modal content goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="col-sm-4 bottomzero slide-in-element">
+            <li>MUSIC: Ayase</li>
+            <li>VOCAL: ikura</li>
+            <li>NOVEL: ISHIKI SOTA</li>
+            <li>VIDEO: HARUMOTSU</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="parent-container slide-in-element">
+        <div class="video-container">
+          <a href="https://youtu.be/kzdJkT4kp-A" target="_blank"><img src="./img/ytハルジオン.jpg" class="width750422"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- top按鈕 -->
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!-- 分頁 -->
+  <div class="pagination parent-container wh1" style="margin: 5%;">
+    <a href="#">&laquo;</a>
+    <a class="active" href="歌曲介紹.html">1</a>
+    <a href="歌曲介紹2.html">2</a>
+    <a href="歌曲介紹3.html">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="歌曲介紹2.html">&raquo;</a>
+  </div>
+  <script src="./javascript/小專.js"></script>
+  <script src="./javascript/歌詞.js"></script>
+  </div>
+</body>
+
+</html>

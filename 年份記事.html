@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年份記事</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/小專.css">
+    <link rel="stylesheet" href="./css/Year.css">
+
+</head>
+
+<body>
+    <div>
+        <!-- 側邊欄 -->
+        <div class="wh1">
+            <div id="sidebar" class="collapsed">
+                <button id="toggleBtn" onclick="toggleSidebar()">
+                    <img src="./img/roomIn.png" alt="Toggle Sidebar" class="zoomin">
+                </button>
+                <ul id="hrefcolor" class="text-center mt-auto">
+                    <li><a href="小專製做.html">Home</a></li>
+                    <li><a href="小專製做.html#tru1">關於</a></li>
+                    <li>
+                        <div id="dropdownMenu" class="dropdown">
+                            <button class="dropbtn"><a href="歌曲介紹.html">歌曲介紹</a></button>
+                            <div class="dropdown-content">
+                                <a href="歌曲介紹.html">歌曲介紹</a>
+                                <a href="歌曲介紹2.html">歌曲介紹2</a>
+                                <a href="歌曲介紹3.html">歌曲介紹3</a>
+                                <a href="歌曲介紹3.html">歌曲介紹4</a>
+                                <a href="歌曲介紹3.html">歌曲介紹5</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="年份記事.html">年份記事</a></li>
+                </ul>
+            </div>
+            <!-- 其他內容 -->
+            <!-- 側邊欄 -->
+        </div>
+        <!-- 至頂欄 -->
+
+        <div class="dot"></div>
+        <div class="mySlides fade"> </div>
+        <div class="topnav" id="myTopnav">
+            <a href="小專製做.html" class="active">Home</a>
+            <a href="小專製做.html#tru1">關於</a>
+            <a href="歌曲介紹.html">歌曲介紹</a>
+            <a href="年份記事.html">年份記事</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- 至頂欄 -->
+        <!-- 至頂欄 -->
+        <!-- 至頂欄 -->
+        <!-- 至頂欄 -->
+        <div class="slideshow-container">
+            <div>
+                <h2>發行日期</h2>
+                <img src="./img/O4GP.jpg" style="width: 900px; height: 513px;">
+                <br>
+                <br>
+                <br>
+                <div onclick="reverseArray()" class="btn btn-info" style="margin-left: 800px; float: right;">
+                    <svg id="flipIcon" onclick="reverseIcon(); originalFunction();" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-sort-up" viewBox="0 0 16 16">
+                        <path
+                            d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
+                    </svg>
+                </div>
+                
+
+            </div>
+            <div class="timeline">
+                <div id="timelineContainer"></div>
+
+            </div>
+
+
+
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!-- 新增按鈕 -->
+        <script src="./javascript/小專.js"></script>
+        <script src="./javascript/歌曲年分.js"></script>
+
+</body>

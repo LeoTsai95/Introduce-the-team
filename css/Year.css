@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .timeline {
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+
+ 
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  
+    
+
+  
+  .timeline-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .timeline-item::before {
+    content: attr(data-date);
+    position: absolute;
+    top: 40%;
+    left: -120px;
+    width: 150px;
+    background-color: #FF9F55;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+  @media (max-width: 767px) {
+    .timeline-item::before {
+      display: none;
+    }
+  }
+  .timeline-item .content {
+    background-image: url(../img/cool-background\ \(5\).png);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 180px;
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .date {
+    color: #FF9F55;
+    font-weight: bold;
+  }
+
+  
+  .title {
+    color: #000;
+  }
+  
+  .novel {
+    color: #333;
+  }
+  
+  .category {
+    font-weight: bold;
+  }
+  
+  .timeline-item .content h3 {
+    color: #FF9F55;
+    /* 標題的預設顏色 */
+  }
+  
+  .timeline-item .content .date {
+    color: #FF0000;
+    /* 日期的顏色 */
+  }
+  
+  .timeline-item .content .novel {
+    color: #0000FF;
+    /* 小說的顏色 */
+  }
+  
+  .timeline-item.category-ESIDE .content h3 {
+    color: #00FF00;
+    /* E-SIDE 的標題顏色 */
+  }
+  
+  .timeline-item.category-THEBOOK .content .date {
+    color: #FF0000;
+    /* THE BOOK 的日期顏色 */
+  }
+  
+  .timeline-item.category-ESIDE .content .date {
+    color: #00FF00;
+    /* E-SIDE 的日期顏色 */
+  }
+  
+  .timeline-item.category-其他單曲 .content .date,
+  .timeline-item.category-其他單曲 .content .novel {
+    color: #0000FF;
+    /* 其他單曲的日期和小說顏色 */
+  }
+  
+  .timeline-item.category-THEBOOK .content .novel {
+    color: lightgreen;
+    /* THE BOOK 的小說顏色 */
+  }
+  
+  .timeline-item.category-ESIDE .content .novel {
+    color: #00FF00;
+    /* E-SIDE 的小說顏色 */
+  }
+  
+  .timeline-item.category-其他單曲 .content .novel {
+    color: lightblue;
+    /* 其他單曲的小說顏色 */
+  }
+  
+  .timeline-item .content {
+    position: relative;
+  }
+  
+  .timeline-item .content img {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .timeline-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .timeline-image:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .flipped {
+    transform: rotateX(180deg);
+  }
+
+ 
+  @media (max-width: 768px) {
+    .btn {
+      float: left;
+    }
+  }
+  
